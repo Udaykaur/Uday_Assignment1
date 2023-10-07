@@ -1,0 +1,68 @@
+/* Uday Kiran Kaur S# 301239444 , Lab assignment 1 */
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background-image: url('/images/a3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
+    background-color: rgba(231, 222, 199, 0.327);
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* MacOS glass blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    opacity: 0.8; /* Blending effect */
+}
+
+.card-body {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.362);
+}
+
+.card-title {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 1rem;
+    opacity: 0.9;
+}
