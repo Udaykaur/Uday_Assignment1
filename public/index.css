@@ -1,0 +1,109 @@
+/* Uday Kiran Kaur S# 301239444 , Lab assignment 1 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('/images/a1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000000; /* Default text color */
+}
+
+header, .jumbotron, footer {
+    background-color: rgba(218, 171, 238, 0.095); /* Lowered the opacity for a more pronounced blur effect */
+    backdrop-filter: blur(20px); /* Increased blur value */
+    -webkit-backdrop-filter: blur(20px); /* For Safari compatibility */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+header:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12); /* Enhanced shadow on hover */
+}
+
+header h1 {
+    font-size: 2.7rem; /* Increased size for prominence */
+    font-weight: 500; /* Adjusted weight for better readability */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Text shadow for depth */
+}
+
+header nav a {
+    text-decoration: none;
+    margin: 0 18px; /* Increased spacing between nav items */
+    padding: 6px 12px; /* Added padding for a better clickable area */
+    color: #000000;
+    transition: transform 0.5s ease, color 0.5s ease;
+}
+
+header nav a:hover {
+    transform: translateY(-5px);
+    color: #007bff;
+}
+
+/* Jumbotron Styles */
+.jumbotron {
+    text-align: center;
+    padding: 50px; /* Increased padding for a roomier look */
+}
+
+.jumbotron:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12); /* Enhanced shadow on hover */
+}
+
+.display-4 {
+    font-size: 2.8em;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.lead {
+    font-size: 1.5em; /* Increased size for better readability */
+    margin-bottom: 30px; /* Increased spacing */
+    line-height: 1.6; /* Improved line spacing */
+}
+
+hr.my-4 {
+    border-top: 2px solid #007bff; /* Used the primary color for the line */
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.btn-primary.btn-lg {
+    padding: 15px 25px; /* Increased padding for a larger button */
+    font-size: 1.2em;
+    font-weight: 500; /* Made the font weight consistent */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+    transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+.btn-primary.btn-lg:hover {
+    transform: translateY(-5px);
+    background-color: #0056b3;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12); /* Enhanced shadow on hover */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    font-weight: 400; /* Adjusted weight for better readability */
+}
+
+footer:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12); /* Enhanced shadow on hover */
+}
